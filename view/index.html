@@ -17,10 +17,16 @@
 
         .camera-button {
             float: left;
-            padding: 20px 10px;
+            padding: 10px 30px;
             margin-right: 20px;
             border: 1px solid green;
+			cursor:pointer;
         }
+		
+		.camera-button.selected {
+			background-color: green;
+			color: white;
+		}
 
 
         .main {
@@ -53,9 +59,9 @@
 <body>
 <div class="container">
     <div class="header">
-        <div class="camera-button" onclick="setSelectedCamera(1)">Living Room</div>
-        <div class="camera-button" onclick="setSelectedCamera(2)">Kitchen</div>
-        <div class="camera-button" onclick="setSelectedCamera(0)">Yard</div>
+        <div class="camera-button selected" id="cameraBtn1" onclick="setSelectedCamera(1)">Living Room</div>
+        <div class="camera-button" id="cameraBtn2" onclick="setSelectedCamera(2)">Kitchen</div>
+        <div class="camera-button" id="cameraBtn0" onclick="setSelectedCamera(0)">Garden</div>
     </div>
     <div class="main">
         <img  id="targetImg" class="cameraMax"  alt=""/>
@@ -83,7 +89,9 @@
     };
 
     const setSelectedCamera = (cam) => {
+		Array.from(document.getElementsByClassName("camera-button")).map(e => e.classList.remove("selected"))
         selectedCamera = cam;
+		document.getElementById("cameraBtn" + cam).classList.add("selected");
     };
 
 </script>
