@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  service:
+    build: './service'
+    ports:
+      - "5555:8080"
+
+  cloudflare-ddns:
+    image: oznu/cloudflare-ddns:latest
+    restart: always
+    environment:
+      - API_KEY=qgEwfDeWLOlAMYEfbKVV3Ix_PbZ7-c3CtutLQyIB
+      - ZONE=bs-family.site
+      - SUBDOMAIN=dvr
+      - PROXIED=true
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./service/view:/srv/www/static
+      - ./gateway/gateway.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - service

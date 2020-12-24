@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  service:
+    build: './service'
+    restart: always
+    ports:
+      - "8080:8080"
+
+  cloudflare-ddns:
+    image: oznu/cloudflare-ddns:latest
+    restart: always
+    environment:
+      - API_KEY=qgEwfDeWLOlAMYEfbKVV3Ix_PbZ7-c3CtutLQyIB
+      - ZONE=bs-family.site
+      - SUBDOMAIN=dvr
+      - PROXIED=true

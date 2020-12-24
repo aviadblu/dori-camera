@@ -2,7 +2,7 @@ const express = require('express')
 const http = require('http')
 const Stream = require('stream').Transform
 const app = express()
-const port = 5555;
+const port = 8080;
 
 const cameraHost = "http://192.168.1.222/";
 const cameraUser = "admin";
@@ -14,8 +14,8 @@ app.get('/', (req, res) => {
     res.send("./view/index.html")
 })
 
-app.get('/camera/:id', (req, res) => {
-    console.log("request ", req.params.id);
+app.get('/api/camera/:id', (req, res) => {
+    //console.log("request ", req.params.id);
     const url =`${cameraHost}cgi-bin/snapshot.cgi?chn=${req.params.id}&u=${cameraUser}&p=${cameraPass}&q=100&d=1&`;
     http.request(url, function(response) {
         const data = new Stream();

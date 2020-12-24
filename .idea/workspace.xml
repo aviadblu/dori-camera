@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b524b5c4-dedc-4c5e-95be-1243d6ef18e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docker-compose-ngnix.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/gateway.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/installSvc.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nssm/nssm.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uninstallSvc.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,26 +43,39 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mdcl/app-v2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../chief-game" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\dori-camera" />
       <recent name="C:\code\camera\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\code\camera\view" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/camera/view/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/service/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -65,16 +92,25 @@
       <workItem from="1607791118853" duration="24000" />
       <workItem from="1607934886629" duration="14000" />
       <workItem from="1607941291315" duration="32000" />
+      <workItem from="1608726307564" duration="42000" />
+      <workItem from="1608726350506" duration="6482000" />
+      <workItem from="1608792233191" duration="3094000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="1059" y="454" key="FileChooserDialogImpl" timestamp="1607941321357">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1059" y="454" key="FileChooserDialogImpl/0.0.2560.1400/2560.232.1920.1040@0.0.2560.1400" timestamp="1607941321357" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

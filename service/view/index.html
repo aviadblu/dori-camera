@@ -72,7 +72,7 @@
     let refreshMS = 150;
     let selectedCamera = 1;
     const imageUrl = () => {
-        return  "/camera/" + selectedCamera + "?t=" + new Date().getTime();
+        return  "/api/camera/" + selectedCamera + "?t=" + new Date().getTime();
     };
 
     let camImage = new Image();
